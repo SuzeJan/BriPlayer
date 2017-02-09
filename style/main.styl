@@ -1,0 +1,249 @@
+#jMy-player
+  width: 500px
+  margin: auto
+  position: relative
+  .container
+    display: flex
+    .music-cover
+      width: 130px
+      -webkit-flex: 0 0 auto
+      -ms-flex: 0 0 auto
+      flex: 0 0 auto
+      overflow: hidden
+      margin-right: 10px
+      background-color: rgba(0, 0, 0, .5)
+      border: 1px solid #333
+      -webkit-user-select: none
+      -moz-user-select: none
+      -ms-user-select: none
+      user-select: none
+      -moz-border-radius: 100%
+      -webkit-border-radius: 100%
+      -o-border-radius: 100%
+      -ms-border-radius: 100%
+      -khtml-border-radius: 100%
+      border-radius: 100%
+      -moz-box-shadow: 0 2px 10px black
+      -webkit-box-shadow: 0 2px 10px black
+      -o-box-shadow: 0 2px 10px black
+      box-shadow: 0 2px 10px black
+      img
+        display: block
+    .music-control
+      width: calc(100% - 130px)
+      -webkit-flex: 1
+      -ms-flex: 1
+      flex: 1
+      .music-head p
+        white-space: nowrap
+        overflow: hidden
+        -ms-text-overflow: ellipsis
+        text-overflow: ellipsis
+      .music-head p:nth-of-type(1)
+        font-size: 18px
+        text-align: center
+        color: #585858
+        cursor: pointer
+        margin-bottom: 6px
+      .music-head .songName
+      .music-head .singer
+        -webkit-transition: all .6s
+        -moz-transition: all .6s
+        -ms-transition: all .6s
+        -o-transition: all .6s
+        transition: all .6s
+      .music-head .singer
+        font-size: 18px
+        color: #888
+      .music-head .songName:hover
+        color: #23d69b
+      .music-head .singer:hover
+        color: #23d69b
+      .music-head .desc
+        font-size: 12px
+        color: #aaa
+    .music-ctrlBtn
+      margin-top: 20px;
+      .icon
+        float: left
+        color: #585858
+        font-size: 20px
+        cursor: pointer
+        -webkit-transition: all .6s
+        -moz-transition: all .6s
+        -ms-transition: all .6s
+        -o-transition: all .6s
+        transition: all .6s
+      .icon:hover
+        opacity: .8
+      .icon:active
+        opacity: .4
+      .change-btn
+        float: left
+        .icon + .icon
+          margin-left: 4px
+      .volume-btn
+        float: right
+        .slider
+          position: relative
+          width: 100px
+          height: 6px
+          display: inline-block
+          background-color: rgba(0, 0, 0, 0.2);
+          -webkit-border-radius: 4px
+          -moz-border-radius: 4px
+          border-radius: 4px
+          margin-top: 7px
+          margin-left: 20px
+          .line-slider
+            width: 14px
+            height: 14px
+            position: absolute
+            top: 0
+            left: 0
+            bottom: 0
+            margin: auto 0
+            opacity: 0
+            -webkit-border-radius: 100%
+            -moz-border-radius: 100%
+            border-radius: 100%
+            background-color: #585858;
+            -webkit-transition: all .6s
+            -moz-transition: all .6s
+            -ms-transition: all .6s
+            -o-transition: all .6s
+            transition: all .6s
+          .pace
+            width: 0
+            height: 100%
+            -webkit-transition: all .8s
+            -moz-transition: all .8s
+            -ms-transition: all .8s
+            -o-transition: all .8s
+            transition: all .8s
+            -webkit-border-radius: 4px
+            -moz-border-radius: 4px
+            border-radius: 4px
+            background-color: #23d69b
+        &:hover .line-slider
+          opacity: 1
+    .progress
+      margin-top: 20px
+      .icon
+        float: left
+        font-size: 16px
+        cursor: pointer
+        -webkit-transition: all .3s
+        -moz-transition: all .3s
+        -ms-transition: all .3s
+        -o-transition: all .3s
+        transition: all .3s
+      .icon:hover
+        opacity: .8
+      .icon:active
+        opacity: .4
+      .slider
+        height: 4px
+        position: relative
+        background-color: rgba(0, 0, 0, .3)
+        cursor: pointer
+        margin-bottom: 10px
+        -moz-border-radius: 5px
+        -webkit-border-radius: 5px
+        -o-border-radius: 5px
+        -ms-border-radius: 5px
+        -khtml-border-radius: 5px
+        border-radius: 5px
+        -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5) inset
+        -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5) inset
+        -o-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5) inset
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5) inset
+        .line-slider
+            width: 12px
+            height: 12px
+            position: absolute
+            top: 0
+            left: 0
+            bottom: 0
+            margin: auto 0
+            -webkit-transform: translateX(-50%)
+            -moz-transform: translateX(-50%)
+            transform: translateX(-50%)
+            border: 1px solid #777
+            -webkit-border-radius: 100%
+            -moz-border-radius: 100%
+            border-radius: 100%
+            background-color: #dfdede
+            .dot  
+              width: 3px
+              height: 3px
+              position: absolute
+              top: 0
+              right: 0
+              bottom: 0
+              left: 0
+              z-index: 10
+              margin: auto
+              -webkit-border-radius: 100%
+              -moz-border-radius: 100%
+              border-radius: 100%
+              background-color: #23d69b
+        .pace
+          width: 45%
+          height: 100%
+          background-color: #23d69b
+      .timer
+        font-size: 16px
+        color: #585858
+        float: left
+      .play-type
+        float: right
+        .repeat
+          margin-right: 8px
+  .playlist
+    width: 100%
+    max-height: 116px
+    position: relative
+    overflow: auto
+    margin: 10px auto 0
+    padding: 10px 15px
+    background: rgba(0, 0, 0, 0.5)
+    -moz-border-radius: 5px
+    -webkit-border-radius: 5px
+    -o-border-radius: 5px
+    -ms-border-radius: 5px
+    -khtml-border-radius: 5px
+    border-radius: 5px
+    -moz-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5)
+    -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5)
+    -o-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5)
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5)
+    .list-item
+      color: #aaa;
+      font-size: 12px
+      line-height: 2
+      padding-left: 25px
+      cursor: pointer
+      text-overflow: ellipsis
+      -moz-transition: 0.3s
+      -webkit-transition: 0.3s
+      -o-transition: 0.3s
+      transition: 0.3s
+      -webkit-user-select: none
+      -moz-user-select: none
+      -ms-user-select: none
+      user-select: none
+      &:hover
+      &.active
+        color: #fff
+      .icon
+        width: 20px
+        height: 20px
+        margin-right: 4px
+        display: inline-block
+      &.active
+        .icon
+          vertical-align: middle
+          background-image: url("../images/spectrum-static.png")
+          background-repeat: no-repeat
+          background-position: center

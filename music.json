@@ -1,0 +1,32 @@
+{
+  "music":[
+    {
+      "m_songName": "seve",
+      "m_singer": "Tez Cadey",
+      "m_desc": "油管上火爆的seve舞蹈BGM，循环有毒",
+      "m_source": "music/seve.mp3",
+      "m_avatar": "http://p4.music.126.net/bv58miRmMR0JL4lHy5rTTg==/7853811557348624.jpg"
+    },
+    {
+      "m_songName": "fade",
+      "m_singer": "Alan Walker",
+      "m_desc": "火的一塌糊涂的一首电音",
+      "m_source": "music/Fade.mp3",
+      "m_avatar": "http://p3.music.126.net/YGkMrDa6gmK8NHwxF5ILPw==/2540971374738594.jpg"
+    },
+    {
+      "m_songName": "火星人来过",
+      "m_singer": "薛之谦",
+      "m_desc": "段子手薛子谦的新作",
+      "m_source": "http://m2.music.126.net/ICK9kSTs3R46iAqpOHrLjg==/18813743464313045.mp3",
+      "m_avatar": "http://p3.music.126.net/iXBK3_2R_HN2QGi4c-KXmQ==/3417282158754730.jpg"
+    },
+    {
+      "m_songName": "我知道你都知道",
+      "m_singer": "薛之谦",
+      "m_desc": "电视剧《胜女的代价》插曲",
+      "m_source": "music/wzdndzd.mp3",
+      "m_avatar": "http://p4.music.126.net/GbD4EIwWeeQlO65jsDzywA==/60473139533044.jpg"
+    }
+  ]
+}

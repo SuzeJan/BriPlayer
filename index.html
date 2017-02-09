@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>音乐播放器插件</title>
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/playerFont.css">
+    <link rel="stylesheet" href="style/main.css">
+    <script src="script/jquery.js"></script>
+    <script src="script/my-musicPlayer.js"></script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <!-- 播放器开始 -->
+    <div id="jMy-player">
+        <div class="container">
+            <!-- 左边音乐封面开始 -->
+            <div class="music-cover" ondragstart='return false;'><img width="100%" src="" alt="dafault"></div>
+            <!-- 左边音乐封面结束 -->
+            <!-- 右边控制面板开始 -->
+            <div class="music-control">
+                <!-- 歌曲信息开始 -->
+                <div class="music-head">
+                    <p>
+                        <strong class="songName">歌名</strong> - <span class="singer">歌手</span>
+                    </p>
+                    <p class="desc">
+                        <marquee behavior="scroll" direction="left" scrolldelay="200">一段描述</marquee>
+                    </p>
+                    <p class="lrc"></p>
+                </div>
+                <!-- 歌曲信息结束 -->
+                <!-- 控制按钮开始 -->
+                <div class="music-ctrlBtn clearfix">
+                    <div class="change-btn">
+                        <div class="icon icon-player-fastbackward prev"></div>
+                        <div class="icon icon-player-play play-pause"></div>
+                        <div class="icon icon-player-fastforward next"></div>
+                    </div>
+                    <div class="volume-btn">
+                        <div class="icon icon-player-volume-medium suona-icon"></div>
+                        <div class="icon slider">
+                            <div class="line-slider"></div>
+                            <div class="pace"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 控制按钮结束 -->
+                <!-- 音乐进度条开始 -->
+                <div class="progress clearfix">
+                    <div class="slider">
+                        <div class="loaded"></div>
+                        <div class="line-slider"><span class="dot"></span></div>
+                        <div class="pace"></div>
+                    </div>
+                    <div class="timer">00:00</div>
+                    <div class="play-type clearfix">
+                        <div class="icon icon-player icon-player-loop repeat"></div>
+                        <div class="icon icon-player icon-player-shuffle shuffle"></div>
+                    </div>
+                </div>
+                <!-- 音乐进度条结束 -->
+            </div>
+            <!-- 右边控制面板结束 -->
+        </div>
+        <div class="playlist" id="jPlayList">
+            <p class="list-item active"><span class="icon"></span>(╯﹏╰)b 我没加载出来歌曲...</p>
+        </div>
+    </div>
+    <!-- 播放器结束 -->
+
+    <script>
+        $("#jMy-player").MyPlayer({
+
+        });
+    </script>
+</body>
+
+</html>

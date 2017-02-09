@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'my-player-font';
+    src:  url('../fonts/my-player-font.eot?fupcld');
+    src:  url('../fonts/my-player-font.eot?fupcld#iefix') format('embedded-opentype'),
+    url('../fonts/my-player-font.ttf?fupcld') format('truetype'),
+    url('../fonts/my-player-font.woff?fupcld') format('woff'),
+    url('../fonts/my-player-font.svg?fupcld#my-player-font') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-player"], [class*="icon-player"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'my-player-font' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-player-volume-medium:before {
+    content: "\ea27";
+}
+.icon-player-volume-mute2:before {
+    content: "\ea2a";
+}
+.icon-player-loop:before {
+    content: "\ea2d";
+}
+.icon-player-shuffle:before {
+    content: "\ea30";
+}
+.icon-player-arrowsalt:before {
+    content: "\e900";
+}
+.icon-player-shrink:before {
+    content: "\e901";
+}
+.icon-player-fastbackward:before {
+    content: "\e902";
+}
+.icon-player-fastforward:before {
+    content: "\e903";
+}
+.icon-player-pausecircle:before {
+    content: "\e904";
+}
+.icon-player-play:before {
+    content: "\e905";
+}
+.icon-player-minussquareo:before {
+    content: "\e906";
+}
+.icon-player-bars:before {
+    content: "\e907";
+}
+.icon-player-github:before {
+    content: "\e908";
+}
+
