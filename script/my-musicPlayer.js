@@ -13,8 +13,7 @@
             // 获取歌单数据
             $.ajax({
                 type: "get",
-                url: "http://music.163.com/api/playlist/detail",
-				data: {id: '376470850'},
+                url: "../music.json",
                 dataType: "json",
                 success: function(data) {
                     _this.init(data);
@@ -263,7 +262,6 @@
                             progressWidth = _this.d_audio.get(0).currentTime / _this.d_audio.get(0).duration * 100;
                             _this.d_progressPace.css("width", progressWidth + '%');
                             _this.d_progressLineSlider.css("left", progressWidth + '%')
-                            console.log(i + 1)
                         }, 500);
                     }
                 }).mouseup(function() {
@@ -278,7 +276,6 @@
                     progressWidth = _this.d_audio.get(0).currentTime / _this.d_audio.get(0).duration * 100;
                     _this.d_progressPace.css("width", progressWidth + '%');
                     _this.d_progressLineSlider.css("left", progressWidth + '%')
-                    console.log(j + 1)
                 }, 500);
 
             },
@@ -342,7 +339,6 @@
                         _this.d_volumePace.css("width", sliderX + '%');
                         // 设置滑动块跟随
                         _this.d_volumeLineSlider.css("left", sliderX - _this.d_volumeLineSlider.width() / 2 + '%');
-                        console.log(sliderX);
                     }
                     // if (flag) {
                     //     (sliderX >= 100) && (sliderX = 100);
